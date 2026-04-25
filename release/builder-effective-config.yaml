@@ -1,0 +1,13 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.waveian.music
+productName: Waveian
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+files: []
+electronVersion: 29.4.6

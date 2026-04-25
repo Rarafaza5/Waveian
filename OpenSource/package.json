@@ -1,0 +1,36 @@
+{
+  "name": "waveian",
+  "version": "1.0.0",
+  "description": "Seamless background music player for Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "clean": "rd /s /q dist || exit 0",
+    "dist": "npm run clean && electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "^29.1.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.waveian.music",
+    "productName": "Waveian",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "../release"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
