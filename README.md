@@ -30,7 +30,7 @@
 ### For Developers
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Waveian.git
+   git clone https://github.com/Rarafaza5/Waveian.git
    ```
 2. Navigate to the source folder:
    ```bash
